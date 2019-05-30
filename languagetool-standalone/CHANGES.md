@@ -1,10 +1,31 @@
 # LanguageTool Change Log
 
-## 4.6 (2019-06-26)
+## 4.6 (release planned for 2019-06-26)
+
+#### Catalan
+  * added and improved rules
+
+#### Dutch
+  * added and improved rules
+
+#### English
+  * added and improved rules
+
+#### Esperanto
+  * added and improved rules
+
+#### French
+  * Rule `FRENCH_WHITESPACE` has been split into `FRENCH_WHITESPACE` (on
+    by default) and `FRENCH_WHITESPACE_STRICT` (off by default).
+    `FRENCH_WHITESPACE` only complains if there's no space at all before
+    `?`, `!`, `;`, `:`, or `»`. `FRENCH_WHITESPACE_STRICT` complains
+    if there's no space or a common space instead of a non-breaking space
+    before these characters.
+  * added some popular names to dictionary
 
 #### Galician
   * added verbal agreement rules
-
+ 
 #### German
   * added and improved rules
   * The false friend rule has been modified to use ngrams: Now false friends
@@ -14,8 +35,14 @@
     Use `My handy is broken.` to test the rule. As before, this will only create
     an error if `motherTongue` is set to a German language code.
 
+#### Italian
+  * added popular names to dictionary
+
 #### Portuguese
   * POS and spelling improvements
+
+#### Russian
+  * added and improved rules
 
 #### Spanish
   * Updated spell dictionary from 2.1 to 2.4

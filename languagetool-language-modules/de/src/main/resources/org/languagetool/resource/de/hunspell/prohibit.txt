@@ -1,4 +1,4 @@
-﻿# Words to be marked as spelling errors even if the spell checker
+# Words to be marked as spelling errors even if the spell checker
 # accepts them. Useful to improve the spell checker without touching
 # its files (which are usually not from LT).
 # Supported suffixes for German:
@@ -2140,7 +2140,6 @@ Zimmerschüssel
 Zimmerschüsseln
 Zinssalz
 Zitronengas
-zuhause
 Zuhörerbanken
 Zuschauerbanken
 Zweistelle
@@ -8099,3 +8098,15 @@ Dreigültigkeitskrankenhaus.*
 Alttag/SE
 Polklinik.*
 Paradentalerkrankung.*
+Rocksack/S
+Rücksack/S
+Landebühne
+Markforschung
+Markforscher/N
+Seeschwäche
+Seetest/S
+Suchtfunktion
+Suchtfunktionen
+Veraltung
+Wettberber/NS
+Feuerwerksartigel/NS

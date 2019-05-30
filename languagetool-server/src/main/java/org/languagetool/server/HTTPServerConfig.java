@@ -21,10 +21,7 @@ package org.languagetool.server;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.languagetool.Experimental;
-import org.languagetool.JLanguageTool;
-import org.languagetool.Language;
-import org.languagetool.Languages;
+import org.languagetool.*;
 import org.languagetool.rules.spelling.morfologik.suggestions_ordering.SuggestionsOrdererConfig;
 
 import java.io.File;
@@ -91,7 +88,12 @@ public class HTTPServerConfig {
   protected String dbUsername = null;
   protected String dbPassword = null;
   protected boolean dbLogging;
+  protected boolean prometheusMonitoring = false;
+  protected int prometheusPort = 9301;
+  protected GlobalConfig globalConfig = new GlobalConfig();
+
   protected boolean skipLoggingRuleMatches = false;
+  protected boolean skipLoggingChecks = false;
 
   protected int slowRuleLoggingThreshold = -1; // threshold in milliseconds, used by SlowRuleLogger; < 0 - disabled
 
@@ -255,12 +257,18 @@ public class HTTPServerConfig {
         dbUsername = getOptionalProperty(props, "dbUsername", null);
         dbPassword = getOptionalProperty(props, "dbPassword", null);
         dbLogging = Boolean.valueOf(getOptionalProperty(props, "dbLogging", "false"));
+        prometheusMonitoring = Boolean.valueOf(getOptionalProperty(props, "prometheusMonitoring", "false"));
+        prometheusPort = Integer.parseInt(getOptionalProperty(props, "prometheusPort", "9301"));
         skipLoggingRuleMatches = Boolean.valueOf(getOptionalProperty(props, "skipLoggingRuleMatches", "false"));
+        skipLoggingChecks = Boolean.valueOf(getOptionalProperty(props, "skipLoggingChecks", "false"));
         if (dbLogging && (dbDriver == null || dbUrl == null || dbUsername == null || dbPassword == null)) {
           throw new IllegalArgumentException("dbLogging can only be true if dbDriver, dbUrl, dbUsername, and dbPassword are all set");
         }
         slowRuleLoggingThreshold = Integer.valueOf(getOptionalProperty(props,
           "slowRuleLoggingThreshold", "-1"));
+        globalConfig.setGrammalecteServer(getOptionalProperty(props, "grammalecteServer", null));
+        globalConfig.setGrammalecteUser(getOptionalProperty(props, "grammalecteUser", null));
+        globalConfig.setGrammalectePassword(getOptionalProperty(props, "grammalectePassword", null));
 
         addDynamicLanguages(props);
         setAbTest(getOptionalProperty(props, "abTest", null));
@@ -304,7 +312,7 @@ public class HTTPServerConfig {
     }
   }
 
-  void setLanguageModelDirectory(String langModelDir) {
+  public void setLanguageModelDirectory(String langModelDir) {
     SuggestionsOrdererConfig.setNgramsPath(langModelDir);
     languageModelDir = new File(langModelDir);
     if (!languageModelDir.exists() || !languageModelDir.isDirectory()) {
@@ -813,6 +821,23 @@ public class HTTPServerConfig {
     return this.dbLogging;
   }
 
+
+  /**
+   * @since 4.6
+   * @return
+   */
+  public boolean isPrometheusMonitoring() {
+    return prometheusMonitoring;
+  }
+
+  /**
+   * @since 4.6
+   * @return
+   */
+  public int getPrometheusPort() {
+    return prometheusPort;
+  }
+
   /**
    * @since 4.5
    * @return threshold for rule computation time until a warning gets logged, in milliseconds
@@ -825,11 +850,17 @@ public class HTTPServerConfig {
   /**
    * @since 4.5
    */
-  @Experimental
   boolean isSkipLoggingRuleMatches() {
     return this.skipLoggingRuleMatches;
   }
 
+
+  /**
+   * @since 4.6
+   */
+  public boolean isSkipLoggingChecks() {
+    return skipLoggingChecks;
+  }
 
   /**
    * @since 4.4

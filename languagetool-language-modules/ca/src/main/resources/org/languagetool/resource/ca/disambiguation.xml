@@ -54,9 +54,9 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </rule>
         <rule>
             <pattern>
-                <token inflected="yes">fluïdal</token>
+                <token>feu</token>
             </pattern>
-            <disambig action="remove"><wd lemma="fluïdal"/></disambig>
+            <disambig action="add"><wd lemma="fer" pos="VMIS3S00"/></disambig>
         </rule>
     </rulegroup>
     <rulegroup id="FIX_SENTENCE_TOKENIZATION" name="fix problems with sentence tokenization">
@@ -6030,19 +6030,36 @@ Copyright (C) 2012 Jaume Ortolà i Font
         <disambig action="filter" postag="[^V].*"></disambig>
     </rule>
     <!-- hi haver + nom/verb   Hi ha alzines-->
-    <rule id="haver_nom" name="haver + nom">
-        <pattern>
-            <token>hi</token>
-            <token inflected="yes">haver</token>
-            <marker>
-                <and>
-                    <token postag="V.*" postag_regexp="yes"></token>
-                    <token postag="N.*" postag_regexp="yes"><exception>era</exception></token>
-                </and>
-            </marker>
-        </pattern>
-        <disambig action="filter" postag="[^V].*"></disambig>
-    </rule>
+    <rulegroup id="haver_nom" name="haver + nom">
+        <rule>
+            <pattern>
+                <token>hi</token>
+                <token inflected="yes">haver</token>
+                <marker>
+                    <and>
+                        <token postag="V.*" postag_regexp="yes"></token>
+                        <token postag="N.*" postag_regexp="yes"><exception>era</exception></token>
+                    </and>
+                </marker>
+            </pattern>
+            <disambig action="filter" postag="[^V].*"></disambig>
+        </rule>
+        <rule> <!-- no hi haurà mai poder-->
+            <pattern>
+                <token>hi</token>
+                <token inflected="yes">haver</token>
+                <token postag="RG"><exception postag="[CP].*" postag_regexp="yes"/></token>
+                <marker>
+                    <and>
+                        <token postag="V.*" postag_regexp="yes"></token>
+                        <token postag="N.*" postag_regexp="yes"><exception>era</exception></token>
+                    </and>
+                </marker>
+            </pattern>
+            <disambig action="filter" postag="[^V].*"></disambig>
+            <example type="untouched">El que hi ha quan toca de peus a terra.</example>
+        </rule>
+    </rulegroup>
     <rulegroup id="tens" name="tens (verb/adjectiu)">
         <rule>
             <pattern>
@@ -12278,7 +12295,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
         <rule>
             <pattern>
                 <token regexp="yes">en|per</token>
-                <token>comparació</token>
+                <token regexp="yes">comparació|contraposició</token>
                 <marker>
                     <token regexp="yes">amb|de|d'|a</token>
                 </marker>

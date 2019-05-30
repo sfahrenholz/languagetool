@@ -81,8 +81,14 @@ public class UkrainianTaggerTest {
   public void testNumberTagging() throws IOException {
     TestTools.myAssert("101,234", "101,234/[101,234]number", tokenizer, tagger);
     TestTools.myAssert("101 234", "101 234/[101 234]number", tokenizer, tagger);
+
     TestTools.myAssert("3,5-5,6% 7° 7,4°С", "3,5-5,6%/[3,5-5,6%]number -- 7°/[7°]number -- 7,4°С/[7,4°С]number", tokenizer, tagger);
-    TestTools.myAssert("XIX", "XIX/[XIX]number", tokenizer, tagger);
+
+    TestTools.myAssert("XIX", "XIX/[XIX]number:latin", tokenizer, tagger);
+    // latin number with cyrillic
+    TestTools.myAssert("ХІХ", "ХІХ/[ХІХ]number:latin:bad", tokenizer, tagger);
+    TestTools.myAssert("ІV", "ІV/[ІV]number:latin:bad", tokenizer, tagger);
+
     TestTools.myAssert("10–15", "10–15/[10–15]number", tokenizer, tagger);
 
     TestTools.myAssert("14.07.2001", "14.07.2001/[14.07.2001]date", tokenizer, tagger);
@@ -229,7 +235,7 @@ public class UkrainianTaggerTest {
     TestTools.myAssert("десь-то", "десь-то/[десь-то]adv", tokenizer, tagger);   //TODO: :&pron:ind
     TestTools.myAssert("котрий-то", "котрий-то/[котрий]adj:m:v_naz:&pron:int:rel|котрий-то/[котрий]adj:m:v_zna:rinanim:&pron:int:rel", tokenizer, tagger);   //TODO: :&pron:ind
     TestTools.myAssert("ніби-то", "ніби-то/[ніби]conj:subord", tokenizer, tagger);
-    TestTools.myAssert("вони-то", "вони-то/[вони]noun:p:v_naz:&pron:pers:3", tokenizer, tagger);
+    TestTools.myAssert("вони-то", "вони-то/[вони]noun:unanim:p:v_naz:&pron:pers:3", tokenizer, tagger);
     TestTools.myAssert("права-то", "права-то/[правий]adj:f:v_kly:compb|права-то/[правий]adj:f:v_naz:compb|права-то/[право]noun:inanim:n:v_rod|права-то/[право]noun:inanim:p:v_kly|права-то/[право]noun:inanim:p:v_naz|права-то/[право]noun:inanim:p:v_zna", tokenizer, tagger);
     
     assertNotTagged("хто-то");
@@ -268,7 +274,7 @@ public class UkrainianTaggerTest {
 
     // nouns are too complicated
     //    TestTools.myAssert("фолк-рок-групу", "фолк-рок-групу/[фолк-рок-група]noun:inanim:f:v_zna", tokenizer, tagger);
-    assertNotTagged("етно-джаз-рок");
+//    assertNotTagged("етно-джаз-рок");
     
     // dash-prefix2
     TestTools.myAssert("он-лайн-навчання", "он-лайн-навчання/[он-лайн-навчання]noun:inanim:n:v_naz|он-лайн-навчання/[он-лайн-навчання]noun:inanim:n:v_rod|он-лайн-навчання/[он-лайн-навчання]noun:inanim:n:v_zna|он-лайн-навчання/[он-лайн-навчання]noun:inanim:p:v_naz|он-лайн-навчання/[он-лайн-навчання]noun:inanim:p:v_zna", tokenizer, tagger);
@@ -376,6 +382,14 @@ public class UkrainianTaggerTest {
     //TODO:
     assertNotTagged("йо-йо-тусовки");
   }
+  
+  @Test
+  public void testCompoundUpper() throws IOException {
+    // dictionary only has "соціал-демократичний" and LT only uppercases first letter
+    TestTools.myAssert("Соціал-Демократичний", "Соціал-Демократичний/[соціал-демократичний]adj:m:v_kly|Соціал-Демократичний/[соціал-демократичний]adj:m:v_naz|Соціал-Демократичний/[соціал-демократичний]adj:m:v_zna:rinanim", tokenizer, tagger);
+    TestTools.myAssert("Івано-Франківська", "Івано-Франківська/[Івано-Франківськ]noun:inanim:m:v_rod:prop:geo|Івано-Франківська/[івано-франківський]adj:f:v_kly|Івано-Франківська/[івано-франківський]adj:f:v_naz", tokenizer, tagger);
+    TestTools.myAssert("Переяслав-Хмельницького", "Переяслав-Хмельницького/[переяслав-хмельницький]adj:m:v_rod|Переяслав-Хмельницького/[переяслав-хмельницький]adj:m:v_zna:ranim|Переяслав-Хмельницького/[переяслав-хмельницький]adj:n:v_rod", tokenizer, tagger);
+  }  
 
   @Test
   public void testDynamicTaggingNum() throws IOException {
@@ -452,6 +466,9 @@ public class UkrainianTaggerTest {
     // :bad - має бути без дефісу: "важконапрацьований"
     TestTools.myAssert("важко-напрацьований", "важко-напрацьований/[важко-напрацьований]adj:m:v_kly:&adjp:pasv:perf:bad|важко-напрацьований/[важко-напрацьований]adj:m:v_naz:&adjp:pasv:perf:bad|важко-напрацьований/[важко-напрацьований]adj:m:v_zna:rinanim:&adjp:pasv:perf:bad", tokenizer, tagger);
 
+    TestTools.myAssert("Альпійсько-Карпатського", "Альпійсько-Карпатського/[альпійсько-карпатський]adj:m:v_rod|Альпійсько-Карпатського/[альпійсько-карпатський]adj:m:v_zna:ranim|Альпійсько-Карпатського/[альпійсько-карпатський]adj:n:v_rod", tokenizer, tagger);
+    TestTools.myAssert("Азово-Чорноморського", "Азово-Чорноморського/[азово-чорноморський]adj:m:v_rod|Азово-Чорноморського/[азово-чорноморський]adj:m:v_zna:ranim|Азово-Чорноморського/[азово-чорноморський]adj:n:v_rod", tokenizer, tagger);
+    
     assertNotTagged("бірмюково-блакитний");
     assertNotTagged("во-політичний");
     assertNotTagged("о-політичний");
@@ -476,6 +493,8 @@ public class UkrainianTaggerTest {
 
 //    TestTools.myAssert("дітей-сиріт", "дітей-сиріт/[діти-сироти]noun:anim:p:v_rod", tokenizer, tagger);
 //    TestTools.myAssert("курей-бройлерів", "кури-бройлери", tokenizer, tagger);
+
+    TestTools.myAssert("еко-ресурсний", "еко-ресурсний/[еко-ресурсний]adj:m:v_kly|еко-ресурсний/[еко-ресурсний]adj:m:v_naz|еко-ресурсний/[еко-ресурсний]adj:m:v_zna:rinanim", tokenizer, tagger);
   }
 
   @Test

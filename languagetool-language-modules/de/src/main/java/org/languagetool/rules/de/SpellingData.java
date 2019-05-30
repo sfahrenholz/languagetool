@@ -32,6 +32,7 @@ import org.languagetool.tagging.de.GermanTagger;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -41,7 +42,7 @@ import java.util.Scanner;
  */
 class SpellingData {
 
-  private final List<SpellingRuleWithSuggestion> spellingRules = new ArrayList<>();
+  private final List<SpellingRuleWithSuggestions> spellingRules = new ArrayList<>();
   
   SpellingData(String ruleDesc, String filePath, String message, String shortMessage, String ruleId, ITSIssueType issueType) {
     try (InputStream inputStream = JLanguageTool.getDataBroker().getFromResourceDirAsStream(filePath);
@@ -53,15 +54,15 @@ class SpellingData {
           continue;
         }
         String[] parts = line.split(";");
-        if (parts.length != 2) {
+        if (parts.length < 2) {
           throw new RuntimeException("Unexpected format in file " + filePath + ": " + line);
         }
         String alternative = parts[0];
-        String suggestion = parts[1];
+        List<String> suggestions = new ArrayList<>(Arrays.asList(parts).subList(1, parts.length));
         List<PatternToken> patternTokens = getTokens(alternative, german);
         PatternRule rule = new PatternRule(ruleId, german, patternTokens, ruleDesc, message, shortMessage);
         rule.setLocQualityIssueType(issueType);
-        spellingRules.add(new SpellingRuleWithSuggestion(rule, alternative, suggestion));
+        spellingRules.add(new SpellingRuleWithSuggestions(rule, alternative, suggestions));
       }
     } catch (IOException e) {
       throw new RuntimeException(e);
@@ -97,7 +98,7 @@ class SpellingData {
     }
   }
 
-  public List<SpellingRuleWithSuggestion> get() {
+  public List<SpellingRuleWithSuggestions> get() {
     return spellingRules;
   }
 

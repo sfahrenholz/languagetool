@@ -156,7 +156,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <token inflected="yes" regexp="yes">прийматися|прийнятися|приймаючись|приймавшись|прийнявшись</token>
           </marker>
           <token regexp="yes" min="0">би?</token>
-          <token postag_regexp="yes" postag="(noun:anim:.*?|noun:.):v_oru.*" min="0"/>
+          <token postag_regexp="yes" postag="(noun:(:?un)?anim:.*?):v_oru.*" min="0"/>
           <token postag_regexp="yes" postag="adv(?!p).*" min="0"/>
           <token>до</token>
           <token>уваги</token>
@@ -173,7 +173,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
           <token>до</token>
           <token>уваги</token>
           <token regexp="yes" min="0">би?</token>
-          <token postag_regexp="yes" postag="noun(:anim)?:.:v_oru.*" min="0"/>
+          <token postag_regexp="yes" postag="noun(:(?:un)?anim)?:.:v_oru.*" min="0"/>
           <token postag_regexp="yes" postag="adv(?!p).*" min="0"/>
           <token min="0">не</token>
           <marker>
@@ -1930,7 +1930,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <feature id="case"/>
             <marker>
               <token inflected="yes">любий
-                <exception case_sensitive="yes" inflected="yes" postag_regexp="yes" postag="noun:f:.*">Люба</exception>
+                <exception case_sensitive="yes" inflected="yes" postag_regexp="yes" postag="noun:anim:f:.*">Люба</exception>
               </token>
             </marker>
             <token postag="noun.*" postag_regexp="yes">
@@ -5466,7 +5466,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         </marker>
       </pattern>
       <message>Для позначення головного убору потрібно вживати <suggestion><match
-         no="1" postag_regexp="yes" postag="(noun:inanim:[mp]:v_...).*" postag_replace="$1.*">шолом</match></suggestion></message>
+         no="1" postag_regexp="yes" postag="(noun:inanim:[mp]:v_...):bad:xp." postag_replace="$1">шолом</match></suggestion></message>
       <example correction="шоломи">тримав авіаційні <marker>шлеми</marker>.</example>
       <example correction="шолом">мав великий <marker>шлем</marker>.</example>
       <example>серії «<marker>шлему</marker>».</example>

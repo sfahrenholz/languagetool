@@ -1,178 +1,276 @@
 # Words that extend the spell checker. See ignore.txt for words that should be
 # completely ignored (i.e. not used to create suggestions).
+# AM
+# Center
+# City
+# derrepente
+# desabasto
+# Hey
+# mami
+# New
+# papi
+# PM
+# religionista
+# religionistas
+# River
 abuelita
 abuelitas
 Adam
 Adriana
 Adrien
 Airbnb
+Alan
 Alessa
 Alex
+Alexa
 Alexander
 Alexey
 Alexis
 Alibaba
-Álvarez
-# AM
 Amazon
+American Express
 AMLO
-Alan
+Andon
 Andreas
 Android
+Angelo
 Anthony
+aplicaciones
 app
 Apple
+Ariel
 Aristóteles
+asociaciones
+Atlassian
+ATM
+Audi
 Auguste
+Avengers
+Banamex
+Bancolombia
 BBVA
+Benjamin
 Bing
 Bluetooth
+BMP
+Bob
 Boston
 Brian
 cajita
 cajitas
+calificaciones
+Camacho
 Camila
+cancelaciones
 Cancún
 carrito
+casilla
+casillas
 casita
 casitas
+CEO
+CCTV
 CDMX
 Cecilia
-# Center
+certificaciones
+Chedraui
+Chicago
 Christian
 Chrome
-# City
 Claudio
+CLP
 cojones
 College
+Colombia
+combinaciones
+complicaciones
 concientizar
+contáctanos
+COP
 Craigslist
+Daewoo
 Daniela
 Darwin
-# derrepente
-# desabasto
 DHL
-Díaz
 Disney
 disponible
 disponibles
+DNI
+DOP
+Díaz
 Edgar
 Edwin
 EEUU
 Einstein
 Eladio
 Elizabeth
+e-mail
 email
 Emily
 Emma
 Emmanuel
 empatía
 Eric
+Erick
+Erika
 estimulación
 EU
 Excel
+Fabian
 Facebook
-FB
 faltante
 faltantes
+FB
 feminicidio
 Fernanda
 Fernández
+FIFA
 Ford
 Fortnite
+Frank
 Frankenstein
 Gaby
 García
 George
+GIF
+Gina
+Giovanni
+Gisela
 Gmail
-Gómez
 Gonzalez
 Gonzalo
 Google
+Google Drive
+Google Play
+Google Street View
+Google Earth
+Google Ads
+Google AdSense
+Google Mail
+Google Docs
 GPS
+Guaidó
 Gutierrez
+Gómez
+hardware
 Harry
 Hector
 Hernandez
-# Hey
 Hitler
+Houston
+HSBC
 HTML
 Huawei
+Ingrid
 Instagram
 iOS
 IP
 iPad
+iPad Air
+iPad Mini
 iPhone
 iPod
 Isabella
 Isaías
+ISO
 IVA
 Ivan
 Jack
+Jackson
 Jacob
 Jennifer
 Jenny
 Jessica
 Jimmy
+Joceline
+Joel
 Johnny
 Jones
+Joomla
 Joseph
 jovencita
 jovencitas
 jovencito
 jovencitos
-Juárez
 Judith
 Julian
 Julieta
+Juárez
 Júlio
 Karen
 Karina
 Karla
+Katherine
 Kevin
 kg
+LAN
 Lanzarote
 Layla
 Leonor
+Liliana
 link
 LinkedIn
 Lisboa
+logo
 Lola
 Londres
 Lopez
+Luciano
 Lucy
 Luke
+Mac
+MacBook
+MacBook Air
 mail
-# mami
+marcación
 Marcelo
+Mari
 Marisol
-Martí
 Martin
 Martinez
+Martí
+Marvel
+Marx
 Mary
 Massachusetts
+Mastercard
+Matias
 Max
+Maximiliano
+Melisa
+Melissa
+Messenger
 Miami
 Michael
+Microsoft
 Minecraft
 Miriam
+montos
 Motorola
+Movistar
 MXN
+Nancy
+Nelly
 Nelson
 Netflix
-# New
+New York
 Nick
+Nico
 Nintendo
+Nora
+Nuñez
 Obama
 ok
 Omar
 online
-Paola
-# papi
+Osvaldo
 Paco
+Paola
 Paris
 Parker
 Patrick
+Paul
+Paypal
 PC
 PDF
 pedacito
@@ -185,59 +283,79 @@ Photoshop
 Picasso
 plazo
 plazos
-# PM
 post
 PVC
 Ramirez
+recomendable
+recomendables
+recordarle
+reembolsos
 regalito
 regalitos
-# religionista
-# religionistas
+RFC
 Richard
-# River
 Robert
 Rodolfo
 Rodríguez
 Ronaldo
+Roxana
+Ryan
+Salesforce
+Sam
 Samsung
+Samsung Galaxy
 Sanchez
+Santibañez
+Sarah
+Seagate
+Shopify
 Skype
 Smith
 Snapchat
 sobreático
 Sofía
+software
+Sony
+spam
+Spiderman
 Spotify
+Steve
 Taylor
 Telcel
 Thomas
+ticket
+tickets
 Tokio
 Tom
+Tony
+Trump
+TV
 Twitch
 Twitter
 Uber
 UNESCO
+UPC
 UPS
 URL
+USD
 Valdez
 Valeria
 Vanessa
 Veracruz
 Viviana
+VPN
+Walter
 Washington
 WC
 WhatsApp
+Wilson
 Windows
 Word
 Xbox
+Xbox
 Xiaomi
 YouTube
-IVA
-DNI
-recomendable
-recomendables
-logo
-casilla
-casillas
+Álvarez
 #####         List of Companies from OpenData500 #####
 #####        http://www.opendata500.com/us/list/ #####
 ##### Creative Commons Attribution-ShareAlike 4.0  ###
@@ -360,6 +478,7 @@ CoreLogic
 CostQuest
 Credit Karma
 Credit Sesame
+CRM
 CrowdANALYTIX
 Dabo Health
 DataLogix
@@ -432,6 +551,7 @@ Geofeedia
 Geolytics
 Geoscape
 GetRaised
+Gilberto
 GitHub
 Glassy Media
 Golden Helix
@@ -490,6 +610,7 @@ iTriage
 IVES Group
 IW Financial
 JJ Keller
+JPG
 Junar
 Junyo
 Jurispect
@@ -602,6 +723,7 @@ Personal
 Personalis
 Peterson's
 PEV4me
+Pinterest
 PIXIA Corp
 PlaceILive
 PlanetEcosystems
@@ -642,6 +764,7 @@ Reed Elsevier
 REI Systems
 Relationship Science
 Remi
+Renato
 Retroficiency
 Revaluate
 Revelstone
@@ -735,6 +858,7 @@ Vital Axiom | Niinja
 VitalChek
 Vitals
 Vizzuality
+Volkswagen
 Votizen
 Walk Score
 WaterSmart Software
@@ -748,6 +872,7 @@ Webitects
 WebMD
 Weight Watchers
 WeMakeItSafer
+Wendy
 Wheaton World Wide Moving
 Whitby Group
 Wolfram Research
@@ -768,3 +893,4 @@ Zoner
 Zurich Insurance
 ######################################
 Facebook
+Piñera

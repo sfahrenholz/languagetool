@@ -1,19 +1,23 @@
-LanguageTool is an Open Source proofreading software for English, French, German,
+**LanguageTool** is an Open Source proofreading software for English, French, German,
 Polish, Russian, and [more than 20 other languages](https://languagetool.org/languages/).
 It finds many errors that a simple spell checker cannot detect.
+
+* [How to run your own LanguageTool server](http://wiki.languagetool.org/http-server)
+* [HTTP API documentation](https://languagetool.org/http-api/swagger-ui/#!/default/post_check)
+* [How to use our public server via HTTP](http://wiki.languagetool.org/public-http-api)
+* [How to use LanguageTool from Java](http://wiki.languagetool.org/java-api) ([Javadoc](https://languagetool.org/development/api/index.html?org/languagetool/JLanguageTool.html))
 
 For more information, please see our homepage at https://languagetool.org,
 [this README](https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/README.md),
 and [CHANGES](https://github.com/languagetool-org/languagetool/blob/master/languagetool-standalone/CHANGES.md).
 
-* How to use via HTTP: http://wiki.languagetool.org/public-http-api
-* Full HTTP API documentation: https://languagetool.org/http-api/swagger-ui/#/
-* How to use from Java: http://wiki.languagetool.org/java-api
-* Full Javadoc: https://languagetool.org/development/api/index.html?org/languagetool/JLanguageTool.html
-
 LanguageTool is freely available under the LGPL 2.1 or later.
 
-#### Contributions
+## Docker
+
+Try https://github.com/silvio/docker-languagetool for a community-contributed Docker file.
+
+## Contributions
 
 [The development overview](http://wiki.languagetool.org/development-overview) describes
 how you can contribute error detection rules.
@@ -23,7 +27,7 @@ for issues to get started.
 
 For more technical details, see [our wiki](http://wiki.languagetool.org).
 
-#### Scripted installation and building
+## Scripted installation and building
 To install or build using a script, simply type:
 ```
 curl -L https://raw.githubusercontent.com/languagetool-org/languagetool/master/install.sh | sudo bash <options>
@@ -58,7 +62,7 @@ Commands:
    server                      Runs server version of LanguageTool
 ```
 
-#### Alternate way to build from source
+## Alternate way to build from source
 
 Before start: you will need to clone from GitHub and install Java 8 and Apache Maven.
 
@@ -90,6 +94,6 @@ Test the result in `languagetool-office-extension/target`, rename the `*.zip` to
 
 Now you can use the bleeding edge development copy of LanguageTool `*.jar` files, be aware that it might contain regressions.
 
-#### License
+### License
 
 Unless otherwise noted, this software is distributed under the LGPL, see file [COPYING.txt](https://github.com/languagetool-org/languagetool/blob/master/COPYING.txt).

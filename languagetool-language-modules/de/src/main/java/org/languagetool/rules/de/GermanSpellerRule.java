@@ -46,6 +46,7 @@ import org.languagetool.AnalyzedToken;
 import org.languagetool.AnalyzedTokenReadings;
 import org.languagetool.JLanguageTool;
 import org.languagetool.Language;
+import org.languagetool.Languages;
 import org.languagetool.UserConfig;
 import org.languagetool.language.German;
 import org.languagetool.languagemodel.LanguageModel;
@@ -217,7 +218,7 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     putRepl("dreite[mnrs]?", "dreit", "dritt");
     putRepl("verblüte[mnrs]?", "blü", "blüh");
     putRepl("Einzigste[mnrs]?", "zigst", "zig");
-    putRepl("(aller)?einzigste[mnrs]?", "(aller)?einzigst", "einzig");
+    putRepl("(aller)?einzie?gste[mnrs]?", "(aller)?einzie?gst", "einzig");
     putRepl("[iI]nterkurell(e[nmrs]?)?", "ku", "kultu");
     putRepl("[iI]ntersannt(e[mnrs]?)?", "sannt", "essant");
     putRepl("ubera(g|sch)end(e[nmrs]?)?", "uber", "überr");
@@ -320,11 +321,20 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     putRepl("[pP]atrolier(s?t|t?en?)", "atrolier", "atrouillier");
     putRepl("[pP]ropagandiert(e[mnrs]?)?", "and", "");
     putRepl("[pP]ropagandier(en|st)", "and", "");
+    putRepl("[kK]app?erzität(en)?", "^[kK]app?er", "Kapa");
     putRepl("känzel(n|s?t)", "känzel", "cancel");
+    put("gekänzelt", "gecancelt");
+    put("mogen", "morgen");
+    put("[rR]evü", "Revue");
+    put("eingänglich", "eingangs");
+    put("geerthe", "geehrte");
+    put("interrese", "Interesse");
+    put("[rR]eschärschen", "Recherchen");
+    put("[rR]eschärsche", "Recherche");
+    put("ic", "ich");
     put("w[eä]hret", "wäret");
     put("mahte", "Mathe");
     put("letzdenendes", "letzten Endes");
-    put("gekänzelt", "gecancelt");
     put("aufgesteht", "aufgestanden");
     put("ganichts", "gar nichts");
     put("gesich", "Gesicht");
@@ -598,7 +608,7 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     put("Fr-So", "Fr.–So.");
     put("Sa-So", "Sa.–So.");
     putRepl("[hH]ats", "ats", "at es");
-    putRepl("wieviele?", "wieviel", "wie viel");
+    putRepl("[Ww]ieviele?", "ieviel", "ie viel");
     put("As", "Ass");
     put("[bB]i[sß](s?[ij]|ch)en", "bisschen");
   }
@@ -1359,4 +1369,12 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     }
   }
 
+  /* (non-Javadoc)
+   * @see org.languagetool.rules.spelling.hunspell.HunspellRule#isAcceptedWordFromLanguage(org.languagetool.Language, java.lang.String)
+   */
+  @Override
+  protected boolean isAcceptedWordFromLanguage(Language language, String word) {
+    // probably an abbreviation, e.g. "DOE" -> "Department of Energy"
+    return "en".equals(language.getShortCode()) && StringUtils.isAllUpperCase(word);
+  }
 }

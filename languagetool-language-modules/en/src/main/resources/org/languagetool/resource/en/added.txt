@@ -132,6 +132,7 @@ adulterized	adulterize	VBN
 adulterizes	adulterize	VBZ
 adulterizing	adulterize	VBG
 advancing	advancing	JJ
+AdWords	AdWords	NNP
 aerobicise	aerobicise	VB
 aerobicise	aerobicise	VBP
 aerobicised	aerobicise	VBD
@@ -195,6 +196,7 @@ air-dry	air-dry	VB
 air-dry	air-dry	VBP
 air-drying	air-dry	VBG
 airpower	airpower	NN:UN
+Akmal	Akmal	NNP
 albitise	albitise	VB
 albitise	albitise	VBP
 albitised	albitise	VBD
@@ -299,6 +301,7 @@ anaphase	anaphase	NN:U
 anarchist	anarchist	JJ
 anatomisers	anatomiser	NNS
 anatomizers	anatomizer	NNS
+Andreas	Andreas	NNP
 androgenisation	androgenisation	NN:UN
 androgenise	androgenise	VB
 androgenise	androgenise	VBP
@@ -393,6 +396,7 @@ aphorised	aphorise	VBD
 aphorised	aphorise	VBN
 aphorises	aphorise	VBZ
 aphorising	aphorise	VBG
+APIs	API	NNS
 apostolise	apostolise	VB
 apostolise	apostolise	VBP
 apostolised	apostolise	VBD
@@ -504,6 +508,8 @@ asepticized	asepticize	VBD
 asepticized	asepticize	VBN
 asepticizes	asepticize	VBZ
 asepticizing	asepticize	VBG
+Ashton	Ashton	NNP
+ASINs	ASIN	NNS
 aspen	aspen	NN:U
 aspheterise	aspheterise	VB
 aspheterise	aspheterise	VBP
@@ -519,6 +525,7 @@ aspheterizes	aspheterize	VBZ
 aspheterizing	aspheterize	VBG
 aspiring	aspiring	JJ
 associate	associate	JJ
+Astrid	Astrid	NNP
 astrologise	astrologise	VB
 astrologise	astrologise	VBP
 astrologised	astrologise	VBD
@@ -544,6 +551,7 @@ astronomized	astronomize	VBN
 astronomizes	astronomize	VBZ
 astronomizing	astronomize	VBG
 atheroma	atheroma	NN:U
+Atlassian	Atlassian	NNP
 atticise	atticise	VB
 atticise	atticise	VBP
 atticised	atticise	VBD
@@ -682,7 +690,16 @@ ayahuasca	ayahuasca	NN:U
 bachelorette	bachelorette	NN
 bachelorettes	bachelorette	NNS
 back	back	RB
+backlash	backlash	NN
+back-pedal	back-pedal	VB
+back-pedal	back-pedal	VBP
+back-pedalled	back-pedal	VBD
+back-pedalled	back-pedal	VBN
+back-pedalling	back-pedal	VBG
+back-pedals	back-pedal	VBZ
+back-up	back-up	NN
 backup	backup	NN:U
+back-ups	back-up	NNS
 bacterisation	bacterisation	NN:UN
 balkanisation	balkanisation	NN:UN
 banalisation	banalisation	NN:U
@@ -753,6 +770,7 @@ blockchain	blockchain	NN
 blockchains	blockchain	NNS
 bloggers	blogger	NNS
 Bluetooth	Bluetooth	NNP
+Bogotá	Bogotá	NNP
 bohemian	bohemian	JJ
 boomset	boomset	NN
 boomsets	boomset	NNS
@@ -763,6 +781,7 @@ botnet	botnet	NN
 botnets	botnet	NN
 botrytised	botrytised	JJ
 botrytized	botrytized	JJ
+Brendon	Brendon	NNP
 Brexit	Brexit	NNP
 Bridgend	Bridgend	NNP
 Bridgnorth	Bridgnorth	NNP
@@ -784,6 +803,7 @@ brown	brown	NN:U
 Broxbourne	Broxbourne	NNP
 budding	budding	JJ
 Buffett	Buffet	NNP
+bulletproof	bulletproof	JJ
 bunkered	bunker	VBD
 bunkered	bunker	VBN
 bunkering	bunker	VBG
@@ -902,6 +922,7 @@ carnalised	carnalise	VBD
 carnalised	carnalise	VBN
 carnalises	carnalise	VBZ
 carnalising	carnalise	VBG
+Carrefour	Carrefour	NNP
 cartelise	cartelise	VB
 cartelise	cartelise	VBP
 cartelised	cartelise	VBD
@@ -1061,11 +1082,14 @@ chaptalized	chaptalize	VBN
 chaptalizes	chaptalize	VBZ
 chaptalizing	chaptalize	VBG
 characterisers	characteriser	NNS
+chargeback	chargeback	NN
+chargebacks	chargeback	NNS
 chatbot	chatbot	NN
 chatbots	chatbot	NNS
 checkbox	checkbox	NN
 checkboxes	checkbox	NNS
 checking	checking	NN:U
+checkmate	checkmate	NN:U
 chemicalise	chemicalise	VB
 chemicalise	chemicalise	VBP
 chemicalised	chemicalise	VBD
@@ -1142,6 +1166,7 @@ citizenized	citizenize	VBD
 citizenized	citizenize	VBN
 citizenizes	citizenize	VBZ
 citizenizing	citizenize	VBG
+Citrix	Citrix	NNP
 civilianisation	civilianisation	NN:UN
 civilianise	civilianise	VB
 civilianise	civilianise	VBP
@@ -1156,6 +1181,7 @@ civilianized	civilianize	VBN
 civilianizes	civilianize	VBZ
 civilianizing	civilianize	VBG
 civilised	civilised	JJ
+Clarksville	Clarksville	NNP
 classicise	classicise	VB
 classicise	classicise	VBP
 classicised	classicise	VBD
@@ -1175,6 +1201,7 @@ climatized	climatize	VBN
 climatizes	climatize	VBZ
 climatizing	climatize	VBG
 cloth	cloth	NN
+Cloudflare	Cloudflare	NNP
 coalise	coalise	VB
 coalise	coalise	VBP
 coalised	coalise	VBD
@@ -1538,6 +1565,7 @@ cyanized	cyanize	VBD
 cyanized	cyanize	VBN
 cyanizes	cyanize	VBZ
 cyanizing	cyanize	VBG
+cyber	cyber	JJ
 cyclise	cyclise	VB
 cyclise	cyclise	VBP
 cyclised	cyclise	VBD
@@ -1551,6 +1579,7 @@ cyclized	cyclize	VBN
 cyclizes	cyclize	VBZ
 cyclizing	cyclize	VBG
 damaging	damaging	JJ
+Daniela	Daniela	NNP
 deaerate	deaerate	VB
 deaerated	deaerate	VBD
 deaerated	deaerate	VBN
@@ -1753,6 +1782,7 @@ deciwatt	deciwatt	NN
 deciwatts	deciwatt	NNS
 deciweber	deciweber	NN
 deciwebers	deciweber	NNS
+Declan	Declan	NNP
 decolorise	decolorise	VB
 decolorise	decolorise	VBP
 decolorised	decolorise	VBD
@@ -1804,6 +1834,12 @@ decontextualized	decontextualize	VBN
 decontextualizes	decontextualize	VBZ
 decontextualizing	decontextualize	VBG
 decriminalisation	decriminalisation	NN:UN
+decrypt	decrypt	VB
+decrypt	decrypt	VBP
+decrypted	decrypt	VBD
+decrypted	decrypt	VBN
+decrypting	decrypt	VBG
+decrypts	decrypt	VBZ
 dedramatise	dedramatise	VB
 dedramatise	dedramatise	VBP
 dedramatised	dedramatise	VBD
@@ -2668,6 +2704,7 @@ draconian	draconian	JJ
 drag	drag	NN
 drag-and-drop	drag-and-drop	JJ
 dramatisers	dramatiser	NNS
+Dreamweaver	Dreamweaver	NNP
 droopily	droopily	RB
 drop-down	drop-down	JJ
 Drupal	Drupal	NNP
@@ -2709,6 +2746,7 @@ ebonised	ebonise	VBD
 ebonised	ebonise	VBN
 ebonises	ebonise	VBZ
 ebonising	ebonise	VBG
+eco-friendly	eco-friendly	JJ
 economisation	economisation	NN:UN
 economization	economization	NN:UN
 edifying	edifying	JJ
@@ -3078,6 +3116,7 @@ exawatts	exawatt	NNS
 exaweber	exaweber	NN
 exawebers	exaweber	NNS
 Excel	Excel	NNP
+excess	excess	NN:U
 excluding	excluding	IN
 exoticise	exoticise	VB
 exoticise	exoticise	VBP
@@ -3156,6 +3195,7 @@ fanaticizing	fanaticize	VBG
 far	far	RB
 faradisers	faradiser	NNS
 fast	fast	RB
+FastSpring	FastSpring	NNP
 FEBRUARY	February	NNP
 feminize	feminize	VB
 feminize	feminize	VBP
@@ -3281,6 +3321,7 @@ Finlandizes	Finlandize	VBZ
 Finlandizing	Finlandize	VBG
 fintech	fintech	NN:U
 Firefox	Firefox	NNP
+fireproof	fireproof	JJ
 first	first	RB
 flamenco	flamenco	NN:U
 flipchart	flipchart	NN
@@ -3397,6 +3438,7 @@ gaelicized	gaelicize	VBD
 gaelicized	gaelicize	VBN
 gaelicizes	gaelicize	VBZ
 gaelicizing	gaelicize	VBG
+Gainesville	Gainesville	NNP
 Gallicise	Gallicise	VB
 Gallicise	Gallicise	VBP
 Gallicised	Gallicise	VBD
@@ -3642,6 +3684,12 @@ Gnosticizing	Gnosticize	VBG
 gonadectomised	gonadectomised	JJ
 gonadectomized	gonadectomized	JJ
 Google	Google	NNP
+google	google	VB
+google	google	VBP
+googled	google	VBD
+googled	google	VBN
+googles	google	VBZ
+googling	google	VBG
 gorgonise	gorgonise	VB
 gorgonise	gorgonise	VBP
 gorgonised	gorgonise	VBD
@@ -3670,6 +3718,7 @@ Gothiciser	Gothiciser	NN
 Gothicisers	Gothiciser	NNS
 Gothicizer	Gothicizer	NN
 Gothicizers	Gothicizer	NNS
+GoToMeeting	GoToMeeting	NNP
 gourmandise	gourmandise	VB
 gourmandise	gourmandise	VBP
 gourmandised	gourmandise	VBD
@@ -3775,7 +3824,9 @@ greyscale	greyscale	JJ
 greywacke	greywacke	NN:U
 gripping	gripping	JJ
 groundbreaking	groundbreaking	JJ
+Groupon	Groupon	NNP
 guiding	guiding	JJ
+Guillermo	Guillermo	NNP
 gutturalisations	gutturalisation	NNS
 gutturalise	gutturalise	VB
 gutturalise	gutturalise	VBP
@@ -3899,6 +3950,7 @@ heparinizes	heparinize	VBZ
 heparinizing	heparinize	VBG
 hepatectomised	hepatectomised	JJ
 hepatectomized	hepatectomized	JJ
+Herbalife	Herbalife	NNP
 herborise	herborise	VB
 herborise	herborise	VBP
 herborised	herborise	VBD
@@ -4053,6 +4105,9 @@ homologising	homologise	VBG
 honorable	honorable	JJ
 hosting	hosting	NN:UN
 hostings	hosting	NNS
+Huawei	Huawei	NNP
+Huffington	Huffington	NNP
+Hulu	Hulu	NNP
 humanisers	humaniser	NNS
 humorise	humorise	VB
 humorise	humorise	VBP
@@ -4208,6 +4263,7 @@ hysterectomizes	hysterectomize	VBZ
 hysterectomizing	hysterectomize	VBG
 iBook	iBook	NNP
 iBooks	iBooks	NNP
+ICANN	ICANN	NNP
 iconise	iconise	VB
 iconise	iconise	VBP
 iconised	iconise	VBD
@@ -4323,6 +4379,7 @@ impersonalized	impersonalize	VBD
 impersonalized	impersonalize	VBN
 impersonalizes	impersonalize	VBZ
 impersonalizing	impersonalize	VBG
+in	in	RB
 incentivise	incentivise	VB
 incentivise	incentivise	VBP
 incentivised	incentivise	VBD
@@ -4431,6 +4488,7 @@ interstage	interstage	JJ
 intimacy	intimacy	NN:U
 introflection	introflection	NN:UN
 introflexion	introflexion	NN:UN
+InVision	InVision	NNP
 iodisation	iodisation	NN:UN
 iodiser	iodiser	NN
 iodisers	iodiser	NNS
@@ -4566,9 +4624,11 @@ jasperizes	jasperize	VBZ
 jasperizing	jasperize	VBG
 Javadoc	Javadoc	NNP
 JavaHelp	JavaHelp	NNP
+Jenn	Jenn	NNP
 Jimi	Jimi	NNP
 Jira	Jira	NNP
 Jobs	Jobs	NNP
+Joomla	Joomla	NNP
 journalize	journalize	VB
 journalize	journalize	VBP
 journalized	journalize	VBD
@@ -4603,9 +4663,11 @@ judicialized	judicialize	VBD
 judicialized	judicialize	VBN
 judicializes	judicialize	VBZ
 judicializing	judicialize	VBG
+Julien	Julien	NNP
 JULY	July	NNP
 JUNE	June	NNP
 just	just	RB
+Juventus	Juventus	NNP
 kanji	kanji	NN:U
 kanji	kanji	NNS
 kaolinize	kaolinize	VB
@@ -4667,9 +4729,11 @@ kiloteslas	kilotesla	NNS
 kiloweber	kiloweber	NN
 kilowebers	kiloweber	NNS
 Kirklees	Kirklees	NNP
-KPIs	KPIs	NNS
+KPI	KPI	NN
+KPIs	KPI	NNS
 Kremenchuk	Kremenchuk	NNP
 Kropyvnytskyi	Kropyvnytskyi	NNP
+Kumar	Kumar	NNP
 kyanisation	kyanisation	NN:U
 kyanise	kyanise	VB
 kyanise	kyanise	VBP
@@ -4685,6 +4749,7 @@ kyanized	kyanize	VBN
 kyanizes	kyanize	VBZ
 kyanizing	kyanize	VBG
 Kyiv	Kyiv	NNP
+Kylie	Kylie	NNP
 labialise	labialise	VB
 labialise	labialise	VBP
 labialised	labialise	VBD
@@ -4860,9 +4925,11 @@ logoffs	logoff	NNS
 logon	logon	NN
 logons	logon	NNS
 long-running	long-running	JJ
+Luca	Luca	NNP
 Luhansk	Luhansk	NNP
 Lutsk	Lutsk	NNP
 Lviv	Lviv	NNP
+Lyft	Lyft	NNP
 lyophilise	lyophilise	VB
 lyophilise	lyophilise	VBP
 lyophilised	lyophilise	VBD
@@ -4906,6 +4973,7 @@ macarized	macarize	VBD
 macarized	macarize	VBN
 macarizes	macarize	VBZ
 macarizing	macarize	VBG
+Maddie	Maddie	NNP
 maderise	maderise	VB
 maderise	maderise	VBP
 maderised	maderise	VBD
@@ -4971,6 +5039,7 @@ marketized	marketize	VBD
 marketized	marketize	VBN
 marketizes	marketize	VBZ
 marketizing	marketize	VBG
+Markus	Markus	NNP
 marsupialise	marsupialise	VB
 marsupialise	marsupialise	VBP
 marsupialised	marsupialise	VBD
@@ -5042,6 +5111,8 @@ matronizing	matronize	VBG
 maximiser	maximiser	NN
 maximisers	maximiser	NNS
 MAY	May	NNP
+McAfee	McAfee	NNP
+McAllister	McAllister	NNP
 McAlpine	McAlpine	NNP
 mechanisable	mechanisable	JJ
 mechanised	mechanised	JJ
@@ -5528,6 +5599,7 @@ mitzvot	mitzvah	NNS
 mitzvoth	mitzvah	NNS
 mix-up	mix-up	NN
 mix-ups	mix-up	NNS
+MLB	MLB	NNP
 mock-up	mock-up	NN
 mock-ups	mock-up	NNS
 modalise	modalise	VB
@@ -5561,6 +5633,7 @@ modularized	modularize	VBD
 modularized	modularize	VBN
 modularizes	modularize	VBZ
 modularizing	modularize	VBG
+Mohammed	Mohammed	NNP
 moiré	moiré	JJ
 moiré	moiré	NN:U
 monarchise	monarchise	VB
@@ -5584,6 +5657,7 @@ mongrelised	mongrelise	VBD
 mongrelised	mongrelise	VBN
 mongrelises	mongrelise	VBZ
 mongrelising	mongrelise	VBG
+Monika	Monika	NNP
 monologise	monologise	VB
 monologise	monologise	VBP
 monologised	monologise	VBD
@@ -5596,6 +5670,7 @@ monologized	monologize	VBD
 monologized	monologize	VBN
 monologizes	monologize	VBZ
 monologizing	monologize	VBG
+monopolizable	monopolizable	JJ
 monotonise	monotonise	VB
 monotonise	monotonise	VBP
 monotonised	monotonise	VBD
@@ -5718,6 +5793,7 @@ Muslimized	Muslimize	VBD
 Muslimized	Muslimize	VBN
 Muslimizes	Muslimize	VBZ
 Muslimizing	Muslimize	VBG
+Mustafa	Mustafa	NNP
 mutagenise	mutagenise	VB
 mutagenise	mutagenise	VBP
 mutagenised	mutagenise	VBD
@@ -5857,6 +5933,7 @@ narrativized	narrativize	VBD
 narrativized	narrativize	VBN
 narrativizes	narrativize	VBZ
 narrativizing	narrativize	VBG
+Nathalie	Nathalie	NNP
 nationalisation	nationalisation	NN:U
 nationalisers	nationaliser	NNS
 nativise	nativise	VB
@@ -5871,6 +5948,8 @@ nativized	nativize	VBD
 nativized	nativize	VBN
 nativizes	nativize	VBZ
 nativizing	nativize	VBG
+NDA	NDA	NN
+NDAs	NDA	NNS
 né	né	JJ
 near	near	RB
 nebulisations	nebulisation	NNS
@@ -5950,6 +6029,7 @@ nickelized	nickelize	VBD
 nickelized	nickelize	VBN
 nickelizes	nickelize	VBZ
 nickelizing	nickelize	VBG
+Nico	Nico	NNP
 nineteenfold	nineteenfold	JJ
 nineteenfold	nineteenfold	RB
 nitratine	nitratine	NN:U
@@ -6155,6 +6235,7 @@ opalising	opalise	VBG
 opalizes	opalize	VBZ
 opalizing	opalize	VBG
 open-source	open-source	JJ
+Open-Xchange	Open-Xchange	NNP
 operationalisable	operationalisable	JJ
 operationalise	operationalise	VB
 operationalise	operationalise	VBP
@@ -6461,6 +6542,7 @@ panellised	panellised	JJ
 panellized	panellized	JJ
 panopticon	panopticon	NN
 panopticons	panopticon	NNS
+Paola	Paola	NNP
 papalise	papalise	VB
 papalise	papalise	VBP
 papalised	papalise	VBD
@@ -6662,6 +6744,7 @@ patrialized	patrialize	VBN
 patrializes	patrialize	VBZ
 patrializing	patrialize	VBG
 patronising	patronise	VBG
+Paulo	Paulo	NNP
 PayPal	PayPal	NNP
 pearlise	pearlise	VB
 pearlise	pearlise	VBP
@@ -6919,6 +7002,7 @@ petawatt	petawatt	NN
 petawatts	petawatt	NNS
 petaweber	petaweber	NN
 petawebers	petaweber	NNS
+Petersburg	Petersburg	NNP
 petrified	petrified	JJ
 phagocytise	phagocytise	VB
 phagocytise	phagocytise	VBP
@@ -7141,6 +7225,7 @@ pinealectomized	pinealectomize	VBD
 pinealectomized	pinealectomize	VBN
 pinealectomizes	pinealectomize	VBZ
 pinealectomizing	pinealectomize	VBG
+Pinterest	Pinterest	NNP
 pisé	pisé	NN:UN
 pisés	pisé	NNS
 pitot	pitot	NN
@@ -7182,6 +7267,8 @@ plebeianizing	plebeianize	VBG
 plugin	plugin	NN
 plugins	plugin	NNS
 pluralisers	pluralisers	NNS
+POC	POC	NN
+POCs	POC	NNS
 podcast	podcast	NN
 podcast	podcast	VB
 podcast	podcast	VBD
@@ -7479,6 +7566,7 @@ proctorized	proctorize	VBD
 proctorized	proctorize	VBN
 proctorizes	proctorize	VBZ
 proctorizing	proctorize	VBG
+ProductHunt	ProductHunt	NNP
 productionise	productionise	VB
 productionise	productionise	VBP
 productionised	productionise	VBD
@@ -7660,6 +7748,7 @@ psychologized	psychologize	VBD
 psychologized	psychologize	VBN
 psychologizes	psychologize	VBZ
 psychologizing	psychologize	VBG
+Pune	Pune	NNP
 puritanise	puritanise	VB
 puritanise	puritanise	VBP
 puritanised	puritanise	VBD
@@ -7685,6 +7774,7 @@ pyritized	pyritize	VBD
 pyritized	pyritize	VBN
 pyritizes	pyritize	VBZ
 pyritizing	pyritize	VBG
+Qin	Qin	NNP
 quantisable	quantisable	JJ
 quantiser	quantiser	NN
 quantisers	quantiser	NNS
@@ -7695,6 +7785,8 @@ quantized	quantize	VBD
 quantized	quantize	VBN
 quantizes	quantize	VBZ
 quantizing	quantize	VBG
+Quizlet	Quizlet	NNP
+R&D	R&D	NN
 racemise	racemise	VB
 racemise	racemise	VBP
 racemised	racemise	VBD
@@ -7744,8 +7836,10 @@ radiosensitized	radiosensitize	VBD
 radiosensitized	radiosensitize	VBN
 radiosensitizes	radiosensitize	VBZ
 radiosensitizing	radiosensitize	VBG
+Rajesh	Rajesh	NNP
 rale	rale	NN
 rales	rale	NNS
+Ramesh	Ramesh	NNP
 randomised	randomised	JJ
 rap	rap	NN:U
 rapturise	rapturise	VB
@@ -7760,6 +7854,7 @@ rapturized	rapturize	VBD
 rapturized	rapturize	VBN
 rapturizes	rapturize	VBZ
 rapturizing	rapturize	VBG
+Rasmus	Rasmus	NNP
 rasterise	rasterise	VB
 rasterise	rasterise	VBP
 rasterised	rasterise	VBD
@@ -7894,6 +7989,7 @@ recontextualized	recontextualize	VBN
 recontextualizes	recontextualize	VBZ
 recontextualizing	recontextualize	VBG
 recrystallisation	recrystallisation	NN:UN
+Reddit	Reddit	NNP
 redemand	redemand	VB
 redemand	redemand	VBP
 redemanded	redemand	VBD
@@ -8181,6 +8277,7 @@ renationalized	renationalize	VBD
 renationalized	renationalize	VBN
 renationalizes	renationalize	VBZ
 renationalizing	renationalize	VBG
+Renato	Renato	NNP
 renormalisation	renormalisation	NN:UN
 reoxidise	reoxidise	VB
 reoxidise	reoxidise	VBP
@@ -8527,6 +8624,7 @@ ringfenced	ringfence	VBD
 ringfenced	ringfence	VBN
 ringfences	ringfence	VBZ
 ringfencing	ringfence	VBG
+Ritzville	Ritzville	NNP
 rivalise	rivalise	VB
 rivalise	rivalise	VBP
 rivalised	rivalise	VBD
@@ -8545,6 +8643,7 @@ robotic	robotic	JJ
 robotisation	robotisation	NN:UN
 robotisations	robotisation	NNS
 Rochford	Rochford	NNP
+Rohan	Rohan	NNP
 romanisation	romanisation	NN:UN
 romaniser	romaniser	NN
 romanisers	romaniser	NNS
@@ -8558,6 +8657,7 @@ romanizes	romanize	VBZ
 romanizing	romanize	VBG
 rope	rope	NN
 routinisation	routinisation	NN:UN
+royalty	royalty	NN:U
 ruggedise	ruggedise	VB
 ruggedise	ruggedise	VBP
 ruggedised	ruggedise	VBD
@@ -8689,6 +8789,7 @@ satirizable	satirizable	JJ
 satisfiability	satisfiability	NN:U
 satisfied	satisfied	JJ
 SATURDAY	Saturday	NNP
+Scarlett	Scarlett	NNP
 scenarise	scenarise	VB
 scenarise	scenarise	VBP
 scenarised	scenarise	VBD
@@ -8752,6 +8853,7 @@ screenshots	screenshot	NNS
 screwjack	screwjack	NN
 screwjacks	screwjack	NNS
 scribbly	scribbly	JJ
+Seagate	Seagate	NNP
 sealant	sealant	NN:UN
 sectarianise	sectarianise	VB
 sectarianise	sectarianise	VBP
@@ -8865,6 +8967,7 @@ sexualized	sexualize	VBD
 sexualized	sexualize	VBN
 sexualizes	sexualize	VBZ
 sexualizing	sexualize	VBG
+Shahid	Shahid	NNP
 shamanise	shamanise	VB
 shamanise	shamanise	VBP
 shamanised	shamanise	VBD
@@ -8879,6 +8982,7 @@ shambles	shambles	NN
 shampoo	shampoo	NN
 Shan	Shan	NNP
 Shan	Shan	NNPS
+Shang	Shang	NNP
 Shans	Shan	NNPS
 shapely	shapely	JJ
 sheesh	sheesh	UH
@@ -8897,6 +9001,7 @@ sherardized	sherardize	VBN
 sherardizes	sherardize	VBZ
 sherardizing	sherardize	VBG
 sherry	sherry	NN:U
+Shopify	Shopify	NNP
 shoreside	shoreside	JJ
 shortlist	shortlist	NN
 shortlists	shortlist	NNS
@@ -8982,6 +9087,8 @@ skeletonized	skeletonize	VBD
 skeletonized	skeletonize	VBN
 skeletonizes	skeletonize	VBZ
 skeletonizing	skeletonize	VBG
+SKU	SKU	NN
+SKUs	SKU	NNS
 Skype	Skype	NNP
 slantways	slantways	RB
 sloganise	sloganise	VB
@@ -9160,11 +9267,15 @@ splenectomized	splenectomize	VBN
 splenectomizes	splenectomize	VBZ
 splenectomizing	splenectomize	VBG
 splined	splined	JJ
+Spotify	Spotify	NNP
+Squarespace	Squarespace	NNP
+SSD	SSD	NN
 standardisable	standardisable	JJ
 standing	standing	JJ
 statin	statin	NN:UN
 statins	statin	NNS
 Steinhardt	Steinhardt	NNP
+Steph	Steph	NNP
 stigmatisers	stigmatisers	NNS
 stimulating	stimulating	JJ
 straight	straight	RB
@@ -9472,6 +9583,7 @@ tanalized	tanalize	VBN
 tanalizes	tanalize	VBZ
 tanalizing	tanalize	VBG
 Tandridge	Tandridge	NNP
+Tanja	Tanja	NNP
 tartarisation	tartarisation	NN:UN
 tartarise	tartarise	VB
 tartarise	tartarise	VBP
@@ -9486,6 +9598,7 @@ tartarized	tartarize	VBN
 tartarizes	tartarize	VBZ
 tartarizing	tartarize	VBG
 taskbars	taskbar	NNS
+Tatiana	Tatiana	NNP
 tautomerise	tautomerise	VB
 tautomerise	tautomerise	VBP
 tautomerised	tautomerise	VBD
@@ -9674,6 +9787,7 @@ texturized	texturize	VBD
 texturized	texturize	VBN
 texturizes	texturize	VBZ
 texturizing	texturize	VBG
+Thanos	Thanos	NNP
 theater	theater	NN:U
 theatricalise	theatricalise	VB
 theatricalise	theatricalise	VBP
@@ -9810,6 +9924,7 @@ traditionalizes	traditionalize	VBZ
 traditionalizing	traditionalize	VBG
 tranquillisation	tranquillisation	NN:U
 tranquillization	tranquillization	NN:U
+Transferwise	Transferwise	NNP
 transparency	transparency	NN:U
 traumatisation	traumatisation	NN:UN
 traumatisations	traumatisation	NNS
@@ -9841,6 +9956,7 @@ tropicalized	tropicalize	VBN
 tropicalizes	tropicalize	VBZ
 tropicalizing	tropicalize	VBG
 troubling	troubling	JJ
+Trump	Trump	NNP
 trypsinise	trypsinise	VB
 trypsinise	trypsinise	VBP
 trypsinised	trypsinise	VBD
@@ -9882,6 +9998,7 @@ Uberized	Uberize	VBD
 Uberized	Uberize	VBN
 Uberizes	Uberize	VBZ
 Uberizing	Uberize	VBG
+Ulaanbaatar	Ulaanbaatar	NNP
 ullaging	ullaging	NN:U
 ultraprecise	ultraprecise	JJ
 unbowdlerise	unbowdlerise	VB
@@ -9978,6 +10095,7 @@ unfeudalized	unfeudalize	VBN
 unfeudalizes	unfeudalize	VBZ
 unfeudalizing	unfeudalize	VBG
 unforthcoming	unforthcoming	JJ
+unified	unified	JJ
 unimolecular	unimolecular	JJ
 uninsulated	uninsulated	JJ
 unioniser	unioniser	NN
@@ -10078,6 +10196,7 @@ untags	untag	VBZ
 unverbalised	unverbalised	JJ
 unwove	unwove	VBD
 up	up	RB
+upgradable	upgradable	JJ
 upset	upset	JJ
 upsize	upsize	VB
 upsize	upsize	VBP
@@ -10237,6 +10356,7 @@ villainized	villainize	VBD
 villainized	villainize	VBN
 villainizes	villainize	VBZ
 villainizing	villainize	VBG
+Vimeo	Vimeo	NNP
 Vinnytsia	Vinnytsia	NNP
 virilisation	virilisation	NN:UN
 virilise	virilise	VB
@@ -10320,6 +10440,7 @@ vowelised	vowelise	VBN
 vowelises	vowelise	VBZ
 vowelising	vowelise	VBG
 vulcanisers	vulcaniser	NNS
+VW	VW	NNP
 Wachovia	Wachovia	NNP
 walkthrough	walkthrough	NN
 walkthroughs	walkthrough	NNS
@@ -10339,6 +10460,7 @@ weaponized	weaponize	VBD
 weaponized	weaponize	VBN
 weaponizes	weaponize	VBZ
 weaponizing	weaponize	VBG
+Weasley	Weasley	NNP
 weatherise	weatherise	VB
 weatherise	weatherise	VBP
 weatherised	weatherise	VBD
@@ -10350,6 +10472,7 @@ webcasts	webcast	NNS
 webinar	webinar	NN
 webinars	webinar	NNS
 WEDNESDAY	Wednesday	NNP
+Weebly	Weebly	NNP
 weeklong	weeklong	JJ
 westerniser	westerniser	NN
 westernisers	westerniser	NNS
@@ -10508,6 +10631,8 @@ yottawebers	yottaweber	NNS
 YouTube	YouTube	NNP
 yucca	yucca	NN:U
 Zaporizhia	Zaporizhia	NNP
+Zelda	Zelda	NNP
+Zendesk	Zendesk	NNP
 zeptoampere	zeptoampere	NN
 zeptoamperes	zeptoampere	NNS
 zeptobecquerel	zeptobecquerel	NN

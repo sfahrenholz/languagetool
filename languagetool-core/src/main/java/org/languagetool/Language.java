@@ -99,7 +99,7 @@ public abstract class Language {
    * Get the rules classes that should run for texts in this language.
    * @since 4.3
    */
-  public abstract List<Rule> getRelevantRules(ResourceBundle messages, UserConfig userConfig, List<Language> altLanguages) throws IOException;
+  public abstract List<Rule> getRelevantRules(ResourceBundle messages, UserConfig userConfig, Language motherTongue, List<Language> altLanguages) throws IOException;
 
   // -------------------------------------------------------------------------
 
@@ -199,6 +199,14 @@ public abstract class Language {
    * @since 4.4
    */
   public List<Rule> getRelevantNeuralNetworkModels(ResourceBundle messages, File modelDir) {
+    return Collections.emptyList();
+  }
+
+  /**
+   * Get the rules classes that should run for texts in this language.
+   * @since 4.6
+   */
+  public List<Rule> getRelevantRulesGlobalConfig(ResourceBundle messages, GlobalConfig globalConfig, UserConfig userConfig, Language motherTongue, List<Language> altLanguages) throws IOException {
     return Collections.emptyList();
   }
 

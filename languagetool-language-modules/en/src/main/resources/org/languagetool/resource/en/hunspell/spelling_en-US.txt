@@ -606,6 +606,7 @@ detribalize
 detribalized
 detribalizes
 detribalizing
+Deutsche Bank
 devalorization
 diabolize
 diabolized
@@ -765,6 +766,7 @@ exaliter
 exaliters
 exameter
 exameters
+exploitive
 exorcize
 exorcized
 exorcizes
@@ -1459,12 +1461,15 @@ necrotize
 necrotized
 necrotizes
 necrotizing
+neoliberal
 neologize
 neologized
 neologizes
 neologizing
 neovascularization
 neuroscientist
+newsmagazine
+newsmagazines
 nm
 nominalizable
 nominalize
@@ -2273,6 +2278,7 @@ technologizes
 technologizing
 tectonically
 Tel Aviv
+telecom
 telepathize
 telepathized
 telepathizes

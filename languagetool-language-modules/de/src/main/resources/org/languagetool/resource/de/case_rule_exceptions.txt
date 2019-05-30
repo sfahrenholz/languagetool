@@ -18,9 +18,10 @@ Auf und Ab
 August Horch
 Auswärtige[mns]? Amte?s?
 Bad Kleinen
+Badischen? Anilin
 Bares ist Wahres
 Brandenburgischen[ns]? Landesamt(es|s)?|Staats.*
-Bayerische[nrs]? Staats.+|Verdienst(medaillen?|ordens?)|Rundfunks?|Ministerpräsident(en)?|Ver(waltungsgericht|fassung).*|Hof|Walds?|Land(tag|esamte?)s?
+Bayerische[nrs]? Staats.+|Verdienst(medaillen?|ordens?)|Rundfunks?|Ministerpräsident(en)?|Motorenwerken?|Ver(waltungsgericht|fassung).*|Hof|Walds?|Land(tag|esamte?)s?
 (Bekennend|Evangelisch|Katholisch)en? Kirche
 Blaue[nr]? Reiters?|Band(s|es)?|Planet(en)?|Brief[es]?|Moschee|Enzians?
 Bögen
@@ -43,7 +44,7 @@ des Himmlischen Friedens
 Deutschen? Museums?
 Deutschen? [A-Z][a-zäöü]+ Gesellschaft(en)?
 (Deutsche[nr]?|Belgische[nr]?) Schäferhund(en?)?
-Digital (Video|Natives?)
+Digital (Video|Natives?|Audio)
 (Dreißig|Hundert|Sieben)jährigen? Kriege?s?
 Dritte[ns]? Welt|Reiche?s?|Oktober|Bürgermeisters?
 Drum und Dran
@@ -58,7 +59,7 @@ Eiserne[nr]? Kreuzes?|Vorhangs?
 Erste[rn]? Mai|Liga
 Erste[rnm]? (Weltkriege?s?|Bürgermeisters?)
 Essener
-Europäische[mnr]? Fonds|(Atomg|G)emeinschaft|Parlamente?s?|Union|Gerichtshof(es|s)?|Patentamt(es|s)?|Wirtschaftsgemeinschaft|Kommission|Rat(es|s)?|Zentralbank|Menschenrechtskonvention|Agentur|Arzneimittel-?[aA]gentur|Volkspartei|Haftbefehls?|Kulturhauptstadt|Währungsunion
+Europäische[mnrs]? Fonds|(Atomg|G)emeinschaft|Parlamente?s?|Union|Gerichtshof(es|s)?|Patentamt(es|s)?|Wirtschaftsgemeinschaft|Kommission|Rat(es|s)?|Zentralbank|Menschenrechtskonvention|Agentur|Arzneimittel-?[aA]gentur|Volkspartei|Haftbefehls?|Kulturhauptstadt|Währungsunion
 Ewige[rn]? Stadt
 Fair Trade
 Falsche[rn]? Hasen?
@@ -92,7 +93,7 @@ Große[ns]? (Bundesv|V)erdienstkreuz
 Großen (Bundesv|V)erdienstkreuzes
 Groß (und|&) Klein
 Großwild
-Grüne[rn] Punkts?|Woche
+Grüne[rn]? Punkts?|Woche
 Grüne[mnrs]? Veltliners?
 Hängenden Gärten
 Großes vor
@@ -131,9 +132,9 @@ Katholischen? Liga|Universität
 Kaukasische[nr]? Kreidekreis
 kaum Neues
 Kleinen? Antillen|Anfragen?|Zeitung|Belts?
-Kleiner? Bär
+Kleine[nr]? Bär
 (Kommunist|Sozialdemokrat)ischen? Partei
-Königlichen? Hoheit
+Königlichen? (Akademie|Hoheit)
 Las Palmas
 Letzte[nr]? Wille(n|ns)?
 Lug und Trug
@@ -166,6 +167,7 @@ Palästinensischen? Autonomie.+
 Parlamentarische[rn]? Rats?|Rates|Kontrollgremiums?|Untersuchungsausschuss(es)?
 Persische[nr]? Golfs?
 Physikalischen? Gesellschaft
+Preußisch-[A-Za-zÄÖÜäöüß]+
 Real Bamako|Madrid
 Regierenden Bürgermeisters
 Regierende[mnr]? Bürgermeister(in)?
@@ -176,7 +178,7 @@ Römischen Reiches Deutscher Nation
 Römische[ns]? Reich
 Römische Reich Deutscher Nation
 Rote[nmrs]? Kreuz(es)?|Johannisbeeren?|Barons?|Riesen?|Milans?|Planet(en)?|Halbmonds?|Meer(es)?|Grütze|Rathaus(es)?|Beete|Karten?|Khmer|Liste|Armee|Platz|Rüben?
-Runder Tisch
+Runde[rn]? Tisch
 Russischen? Föderation|Revolution
 (Großdeutsch|Russisch|Tausendjährig)e[ns]? Reiche?s?
 Sächsische[nr]? Schweiz|Staats.+
@@ -189,13 +191,14 @@ Schwarze[mns]? Brett|Meer|Loch
 Seiner? Exzellenz
 .+ischen? Akademie der
 Seltene[nr]? Erden
+S[Ii][Gg] Sauer
 Single Malt
 Smart Cit(y|ies)|Card|Home|Phone|Watch
 SK Rapid
 Sozialistischen? Sowjetrepublik(en)?|(Einheits)?[pP]artei
 Spanischen? Grippe|Erbfolgekriegs?|Bürgerkriegs?|Niederlanden?|Treppe|Fliege|Reitschule
 Speis und Trank
-Ständige[nr] Impfkommission
+Ständige[nr]? Impfkommission
 Staatlichen? Universität|Muse(ums?|en)
 Staatsange(hörig|stellt)e[rn]?
 Statistische[mns]? Bundesamt(s|es)?
@@ -203,7 +206,7 @@ Statistische[rn]?|Theoretische[rn]? Physik
 Stiftung Preußischer?
 Steinerne[sn]? Meers?|Brücke
 Stiege
-Süddeutschen? Zeitung
+Süddeutsche[nr]? Zeitung
 Südlichen? Kalkalpen
 Süßes oder Saures
 Syrischen? Beobachtungsstelle
@@ -219,8 +222,8 @@ Unserer Lieben Frau
 Unter den Linden
 Urban I+
 Verlobten?
-Vereinigte[mns] Staaten|Königreiche?s?|Bühnen|Arabischen?
-Vereinte[ns] Nationen
+Vereinigte[mns]? Staaten|Königreiche?s?|Bühnen|Arabischen?
+Vereinte[ns]? Nationen
 Virtual Private Network
 [vV]orgestern|[Gg]estern|[Hh]eute|[Mm]orgen|[Üü]bermorgen Früh
 Weh und Ach

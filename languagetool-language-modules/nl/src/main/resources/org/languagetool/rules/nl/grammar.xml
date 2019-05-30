@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/css" href="../../../../../../../../../languagetool-core/src/main/resources/org/languagetool/rules/rules.css" title="Easy editing stylesheet" ?>
 <!--
 Dutch grammar, typo and style rules for LanguageTool
-Copyright (C) 2006-2018 (baarsrj@xs4all.nl)
+Copyright (C) 2006-2019 (baarsrj@xs4all.nl)
 Copyright (C) 2018 Robin van der Vliet (info@robinvandervliet.com) (miniscule changes)
 
 This library is free software; you can redistribute it and/or
@@ -44,8 +44,6 @@ opzoeken overeenkomende vorm:
 de wordt het : <match no="1" postag="(ZNW:EKV:DE_)|(ZNW:MRV:DE_)|(ZNW:EKV:VRK:HET)|(ZNW:MRV:DE_)" postag_replace="ZNW:EKV:HET|$2|$3|$4">
 het wordt de : <match no="1" postag="(ZNW:EKV:HET)|(ZNW:MRV:DE_)|(ZNW:EKV:VRK:HET)|(ZNW:MRV:DE_)" postag_replace="ZNW:EKV:DE_|$2|$3|$4">
 regexp case-insensitive maken : (?i)
--->
-<!-- MOGELIJKE REGELS
 -->
 <!-- mogelijk ook te gebruiken!
 <rule ...>
@@ -12505,7 +12503,7 @@ onwaarschijnlijk
                         <token regexp="yes" postag="SENT_END">[\p{L}]+</token>
                     </marker>
                 </pattern>
-                <message>Onverwacht einde. Voeg toe een leesteken toe of koppel de teksten.</message>
+                <message>Onverwacht einde. Voeg een leesteken toe of koppel de teksten.</message>
                 <short>Geen einde</short>
                 <example type="incorrect">Deze wat langere zin is <marker>fout</marker></example>
                 <example>Dit is correct.</example>
@@ -13230,6 +13228,7 @@ onwaarschijnlijk
                 <antipattern><token regexp="yes">[A-Z][a-z].*(straat|weg|plein|steeg|dreef|boulevard)|[€.,/-]|lid|artikel|jaar|jaren|figuur|sub|stap|tabel|ISO'</token><token regexp="yes">[0-9]|[1][0-9]|[1-9]0|[1-9][0-9]00|[1-9]00</token><token/></antipattern>
                 <antipattern><token/><token regexp="yes">[0-9]|[1][0-9]|[1-9]0|[1-9][0-9]00|[1-9]00</token><token regexp="yes">.{4,50}|[%.,/-]|GB|u|uur|(jan|feb|maa|apr|mei|jun|jul|aug|okt|nov|dec).*|º|mg|kg|dl|ml|m|mm|cm|km|kHz|TB</token>
                 </antipattern>
+				<antipattern><token regexp="yes">[0-9]{1,2}</token><token>:</token><token regexp="yes">[0-9]{1,2}</token></antipattern>
                 <pattern>
                     <token/>
                     <marker>
@@ -16069,7 +16068,7 @@ steenwijk;Steenwijk
 					</marker>
                 </pattern>
                 <message>Na een getal krijgt het eerste gewone woord geen hoofdletters: <suggestion><match no="3" case_conversion="alllower"/></suggestion></message>
-                <example correction="was">2018 <marker>Was</marker> een mooi jaar.</example>
+                <example correction="deed">2018 <marker>Deed</marker> het goed.</example>
             </rule>
 		</rulegroup>
         <rulegroup id="HOOFDLETTERS_OVERBODIG" name="Woorden die ook klein geschreven mogen worden.">
@@ -16180,9 +16179,10 @@ steenwijk;Steenwijk
             <!-- 2014-08-21 TaalTik regel komt vaak op, maar terecht, vooral bij afkortingen met een onterechte hoofdletter. -->
             <rule>
                 <antipattern><token>,</token><token postag_regexp="yes" postag="ENM.*|VLG:BHL|UNKNOWN"></token></antipattern>
-                <antipattern><token>,</token><token regexp="yes">St|Ch|Th|Ph</token></antipattern>
+                <antipattern><token>,</token><token regexp="yes">San|St|Ch|Th|Ph</token></antipattern>
+				<antipattern><token>,</token><token/><token>,</token></antipattern>
 				<antipattern><token>,</token><token regexp="yes" case_sensitive="yes" postag_regexp="yes" postag="ENM.*">[A-Z].*</token></antipattern>
-				<antipattern><token>,</token><token regexp="yes" case_sensitive="yes" >(Nederlands|Twitter|Duits|Frans|Turks|Vlaams|Hollands|Engels|Portugees|Amerikaans).*|.*[a-z][A-Z].*</token></antipattern>
+				<antipattern><token>,</token><token regexp="yes" case_sensitive="yes" >^[A-Z][a-z].*(s|se|isch|ische)$</token></antipattern>
                 <antipattern><token>,</token><token regexp="yes">[A-Z][a-z].*</token><token regexp="yes" case_sensitive="yes">[A-Z][a-z].*</token></antipattern>
                 <antipattern><token>,</token><token regexp="yes">[A-Z][a-z].*(straat|plein|dreef|steeg|laan)</token></antipattern>
                 <pattern case_sensitive="yes">
@@ -16191,7 +16191,7 @@ steenwijk;Steenwijk
 						<token regexp="yes" case_sensitive="yes">[A-Z][a-z].*</token>
 					</marker>
                 </pattern>
-                <message>Na een komma hoeft geen hoofdletter (behalve bij een eigennaam); bedoelt u: <suggestion><match no="2" case_conversion="startlower"/></suggestion>?</message>
+                <message>Na een komma hoeft meestal geen hoofdletter (behalve bij een eigennaam); bedoelt u: <suggestion><match no="2" case_conversion="startlower"/></suggestion>?</message>
                 <example correction="is">Dit, <marker>Is</marker> een fout.</example>
                 <example>Dit <marker>is</marker> wel goed.</example>
             </rule>
@@ -16204,6 +16204,7 @@ steenwijk;Steenwijk
                 <example>Dit is een <marker>concept</marker>.</example>
 			</rule>
 		</rulegroup>
+		<!-- uitgeschakeld vanwege te veel false positives
         <rulegroup id="HOOFDL_OVERB" name="Hoofdletters overbodig">
 			<antipattern case_sensitive="yes"><token>de</token><token regexp="yes">Rijn|SS</token></antipattern>
 			<antipattern case_sensitive="yes"><token postag="SENT_START"/><token>"</token></antipattern>
@@ -16237,6 +16238,7 @@ steenwijk;Steenwijk
                 <example correction="bisdom">Het <marker>Bisdom</marker> is gegroeid.</example>
             </rule>
         </rulegroup>
+		-->
         <rulegroup id="PAMPUS" name="Pampus of pampus">
             <!-- 2014-08-23 TaalTik -->
             <rule>
@@ -17415,6 +17417,60 @@ steenwijk;Steenwijk
         <example>900 <marker>is</marker> een goed begin.</example>
         </rule>
         -->
+        <rulegroup id="SPATIE_NA" name="spatie na ; of :">
+            <rule>
+				<antipattern> <!-- e.g. 15:00 -->
+					<token regexp="yes">[0-9]{1,2}</token>
+					<token spacebefore="no">:</token>
+					<token spacebefore="no" regexp="yes">[0-9]{1,2}</token>
+				</antipattern>
+				<antipattern>  <!-- e.g. &nbsp; -->
+					<token regexp="yes">&amp;[a-zA-Z#0-9]+</token>
+					<token spacebefore="no">;</token>
+				</antipattern>
+                <pattern>
+                    <token regexp="yes">[:;]</token>
+					<token spacebefore="no"/>
+                </pattern>
+                <message>Na '\1' hoort een spatie: <suggestion>\1 \2</suggestion></message>
+				<example correction=": ik">Er waren er twee<marker>:ik</marker> en hij.</example>
+				<example>Om <marker>08:10</marker> gaat de wekker.</example>
+				<example>De code voor een spatie is niet <marker>&amp;nbsp;</marker>.</example>
+            </rule>
+        </rulegroup>
+		
+        <rulegroup id="KOMMA_HOEWEL" name=", hoewel">
+            <rule>
+                <pattern>
+					<token><exception postag="SENT_START"/><exception>,</exception></token>
+                    <token regexp="yes">hoewel|omdat|zodat|opdat|indien|aangezien|terwijl</token>
+                </pattern>
+                <message>Voor '\2' komt meestal een komma: <suggestion>\1, \2</suggestion></message>
+                <url>https://onzetaal.nl/taaladvies/komma-algemene-regels</url>
+                <example correction="iedereen, hoewel">Zij vertelde het aan <marker>iedereen hoewel</marker> dat niet de bedoeling was.</example>
+            </rule>
+        </rulegroup>
+        <rulegroup id="KOMMA_MAAR" name=", maar">
+            <rule>
+                <antipattern><token regexp="yes">,|toch</token><token>maar</token></antipattern>
+                <antipattern><token>toe</token><token>maar</token><token>!</token></antipattern>
+                <antipattern><token>het</token><token regexp="yes">je|zich|me</token><token>maar</token></antipattern>
+                <antipattern><token postag_regexp="yes" postag="WKW:.*"/><token>alleen</token><token>maar</token></antipattern>
+				<antipattern><token inflected="yes">kunnen</token><token>maar</token><token>beter</token></antipattern>
+				<antipattern><token>ook</token><token>maar</token><token regexp="yes">een|één</token></antipattern>
+				<antipattern><token regexp="yes">WKW:.*</token><token>maar</token><token regexp="yes">een|de|het</token></antipattern>
+				<antipattern><token regexp="yes">je|ik|hij|zij|u</token><token regexp="yes">je|me|zich|u</token><token>maar</token></antipattern>
+				<antipattern><token regexp="yes">het|dit</token><token>maar</token></antipattern>
+				<pattern>
+					<token><exception postag="SENT_START"/></token>
+                    <token>maar</token>
+                </pattern>
+                <message>Voor '\2' komt vaak een komma: <suggestion>\1, \2</suggestion></message>
+                <url>https://onzetaal.nl/taaladvies/komma-algemene-regels</url>
+                <example correction="iedereen, maar">Zij vertelde het aan <marker>iedereen maar</marker> toch was dat niet de bedoeling.</example>
+            </rule>
+        </rulegroup>
+		
         <rulegroup id="KOMMA_DAT" name=", dat → dat">
 			
             <rule>
@@ -25720,6 +25776,23 @@ steenwijk;Steenwijk
                 <example type="incorrect">De discussie <marker>naar aanleiding van</marker> het interview van aartsbisschop Léonard.</example>
             </rule>
         </rulegroup>
+        <rulegroup id="SOCIAL_MEDIA_DINGES" name="social media training / socialmediatraining">
+            <rule>
+                <pattern>
+                    <token regexp="yes">social|sociale</token><token>media</token><token postag_regexp="yes" postag="ZNW.*"/>
+                </pattern>
+				<message>Correct is <suggestion>\1\2\3</suggestion>.</message>
+                <example correction="socialmediatraining">Ik volg een <marker>social media training</marker>.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>social</token><token regexp="yes" postag_regexp="yes" postag="ZNW.*">media.*</token>
+                </pattern>
+				<message>Correct is <suggestion>\1\2</suggestion>.</message>
+                <example correction="socialmediatraining">Ik volg een <marker>social mediatraining</marker>.</example>
+            </rule>
+			
+        </rulegroup>
         <rulegroup id="NAAR_BEHOREN" name="naar behoren">
             <rule>
                 <pattern>
@@ -30825,6 +30898,19 @@ steenwijk;Steenwijk
                 <example correction="Ik vind"><marker>Ik vindt</marker> het onvolwassen gedrag.</example>
             </rule>
         </rulegroup>
+        <rulegroup id="HIJ_WILT" name="hij wilt">
+            <rule>
+                <pattern><token skip="5">hij</token><marker><token>wilt</token></marker></pattern>
+                <message>U bedoelt vast <suggestion>wil</suggestion></message>
+                <example correction="wil">Als hij het niet <marker>wilt</marker>, gaat het mis.</example>
+            </rule>
+            <rule>
+				<antipattern><token regexp="yes">dat|,|;</token></antipattern>
+                <pattern><marker><token skip="5">wilt</token></marker><token>hij</token></pattern>
+                <message>U bedoelt vast <suggestion>wil</suggestion></message>
+                <example correction="Wil"><marker>Wilt</marker> hij het niet, gaat het mis.</example>
+            </rule>
+        </rulegroup>
         <rulegroup id="BEPAALD_JE" name="voltooid deelwoord / 3e persoon">
             <rule>
 				<antipattern><token postag="WKW:VTD:ONV" regexp="yes" skip="10">.*[^kfsp]d</token><token inflected="yes" regexp="yes">zijn|hebben</token></antipattern>
@@ -34872,7 +34958,7 @@ steenwijk;Steenwijk
                 <pattern>
                     <token regexp="yes">ge|gij</token>
                 </pattern>
-                <message>'\1' is niet gebruikelijk meer in dagelijks Nederlands. Gebruik <suggestion>je</suggestion> of <suggestion>u</suggestion></message>
+                <message>'\1' is niet gebruikelijk meer in geschreven Nederlands. Gebruik <suggestion>je</suggestion> of <suggestion>u</suggestion></message>
                 <example correction="Je|U"><marker>Ge</marker> weet wel.</example>
             </rule>
         </rulegroup>

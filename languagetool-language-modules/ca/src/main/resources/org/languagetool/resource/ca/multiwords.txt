@@ -236,6 +236,7 @@ Les Essarts	NPCNG00
 Les Herbiers	NPCNG00
 Les Rousses	NPCNG00
 Little Rock	NPCNG00
+Llosa de Camatxo	NPFSG00
 Loir i Cher	NPCNG00
 Long Island	NPCNG00
 Los Angeles	NPCNG00
@@ -327,6 +328,7 @@ Sidi Bouzid	NPCNG00
 Sierra Leone	NPFSG00
 Silicon Valley	NPCSG00
 Son Servera	NPCNG00
+Soto del Real	NPMSG00
 Staten Island	NPCNG00
 Sun Yat-sen	_GN_MS
 Super Bowl	_GN_FN
@@ -368,6 +370,7 @@ West Bromwich	NPCNG00
 West Ham	NPCNG00
 West Side	NPCNG00
 Xi Jiang	NPCNG00
+Yom Kippur	NPMSO00
 Zareh Sharan	NPCNG00
 Warner Bros	_GN_FS
 Paramount Pictures	_GN_FS
@@ -579,7 +582,7 @@ a trencajunts	LOC_ADV
 a trompellons	LOC_ADV
 a trompons	LOC_ADV
 a trontollons	LOC_ADV
-a trossos	LOC_ADV
+#a trossos	LOC_ADV
 a ulls clucs	LOC_ADV
 a ulls veients	LOC_ADV
 a ultrança	LOC_ADV
@@ -870,6 +873,7 @@ deçà i dellà de	LOC_PREP
 dies irae	_GN_MS
 dia i nit	LOC_ADV
 dia sí dia no	LOC_ADV
+diabetis mellitus	_GN_FS
 dolce vita	_GN_FS
 dolce stil nuovo	_GN_MS
 drag queen	_GN_FS
